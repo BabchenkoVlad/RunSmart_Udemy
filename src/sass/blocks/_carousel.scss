@@ -4,25 +4,34 @@
     width: 750px;
     margin: 0 auto;
     position: relative;
-
   }
-  .prev, .next {
+  .carousel-control-prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: -66px;
     border: none;
     background-color: #fff;
-
-    img {
+    &-icon {
       height: 50px;
       width: 31px;
+      background-image: url(../../icons/left.svg);
     }
   }
 
-  .next {
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #fff;
     right: -66px;
     left: auto;
+    &-icon {
+      height: 50px;
+      width: 31px;
+      background-image: url(../../icons/right.svg);
+    }
   }
 
   // .tns-item {
