@@ -1,9 +1,10 @@
-.review__content {
-  padding: 80px 0 50px 0;
+.review {
+  padding-bottom: 50px;
   &__title {
     font-weight: 700;
     font-size: 30px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
     color: #0D0D0D;
   }
@@ -12,30 +13,28 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 60px;
-
-    &__photo {
-      width: 169px;
-      height: 169px;
-      border-radius: 50%;
+  }
+  &__photo {
+    width: 169px;
+    height: 169px;
+    border-radius: 100%;
+  }
+  &__client {
+    margin-left: 60px;
+    &_name {
+      font-weight: 700;
+      font-size: 18px;
+      color: #0D0D0D;
     }
-    &__client {
-      margin-left: 60px;
-
-      &_name {
-        font-weight: 700;
-        font-size: 18px;
-        color: #0D0D0D;
-      }
-      &_subtitle {
-        font-weight: 500;
-        font-size: 14px;
-        color: #646464;
-      }
-      &_descr {
-        font-weight: 300;
-        font-size: 16px;
-        color: #0D0D0D;
-      }
+    &_subtitle {
+      font-weight: 500;
+      font-size: 14px;
+      color: #646464;
+    }
+    &_descr {
+      font-weight: 300;
+      font-size: 16px;
+      color: #0D0D0D;
     }
   }
 }
